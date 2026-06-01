@@ -1,0 +1,26 @@
+{
+  "name": "ezra-qa-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright UI automation for Ezra booking flow — QA take-home submission",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:happy": "playwright test booking-happy-path",
+    "test:cancel": "playwright test cancel-existing-appointment",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.11.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
